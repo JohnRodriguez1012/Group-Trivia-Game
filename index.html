@@ -1,0 +1,132 @@
+<DOCTYPE html>
+    <html lang="en-us">
+    
+    <head>
+      <meta charset="utf-8">
+  
+      <!--typography-->
+      <link href="https://fonts.googleapis.com/css?family=Gudea|Shrikhand" rel="stylesheet">
+  
+      <!--animate.css library-->
+      <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"
+      integrity="sha384-OHBBOqpYHNsIqQy8hL1U+8OXf9hH6QRxi0+EODezv82DfnZoV7qoHAZDwMwEJvSw"
+      crossorigin="anonymous">
+  
+      <!-- Latest compiled and minified CSS -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  
+      <!--link normalize.css-->
+      <link type="text/css" rel="stylesheet" href="assets/css/normalize.css">
+    
+    
+      <!--link css-->
+      <link type="text/css" rel="stylesheet" href="assets/css/style.css">
+      
+      <title>Project 1: Multiplayer Trivia Game</title>
+  
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    </head>
+  
+    <body>
+        <div class="wrapper">
+          <div class="container-fluid">
+      
+      <!-- heading -->      
+            <div class="jumbotron">
+              <h1>Look Who's Smarter Now!</h1>
+            </div>
+            <div class="row">
+
+      <!-- game content -->
+      <div class="col">
+          <div class="panel panel-primary" id="content-panel">
+            <div class="panel-heading">
+              <h3 class="panel-title">Game</h3>
+            </div>
+            <div class="panel-body" id="content">
+              <form class="form-inline">
+                <div class="form-group">
+                  <div class="input-group">
+                    <input type="text" class="form-control" id="player" placeholder="Choose Your Name">
+                    <span class="input-group-btn" id="chat-input">
+                      <button class="btn btn-success" type="submit" id="name-btn" >Got it!</button>
+                    </span>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+
+      <!-- achievements log -->
+              <div class="row">
+                <div class="col">
+                  <div class="panel panel-primary" id="achievements-panel">
+                    <div class="panel-heading">
+                      <h3 class="panel-title">Achievements List</h3>
+                    </div>
+                    <div class="panel-body" id="achievements"></div>
+                  </div>
+                </div>
+  
+        
+          <!-- chat log -->
+                <div id="chat">
+                  <ul id="chat-output"></ul>
+                  <table id="chatBox" class="display" cellspacing="20px">
+                    <tbody id="displayRow">
+                      
+                    </tbody>
+                  </table>                
+                  <div class="input-group">
+                    <input type="text" class="form-control" id="chat-input" placeholder="ur gonna get pwnd">
+                    <span class="input-group-btn" id="chat-input">
+                      <button class="btn btn-success" type="submit" id="chat-btn" >Taunt Your Adversary!</button>
+                    </span>
+                  </div>
+                </div>
+              </div>
+  
+
+              
+      <!-- current player scoreboard table -->
+                <div class="panel panel-primary" id="scoreboard-panel">
+                  <div class="panel-heading">
+                    <h3 class="panel-title">Scoreboard</h3>
+                  </div>
+                  <div class="panel-body" id="scoreboard">
+                    <table class="table table-hover" id="scoreboard-table">
+                      <thead>
+                        <tr>
+                          <th>Question Number</th>
+                          <th id="p1score">Player 1 Total Score</th>
+                          <th id="p1time">Player 1 Total Time</th>
+                          <th id="p2score">Player 2 Total Score</th>
+                          <th id="p2time">Player 2 Total Time</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>          
+            
+              </div>
+            </div> 
+          </div>
+        <div class="footer">
+          <small>&copy 2017 Peter Norman, Corey Vaughan, John Rodriguez, and Nicole Clements</small>
+    </body>
+      
+      <!-- jQuery -->
+      <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="  crossorigin="anonymous"></script>
+  
+      <!-- Firebase Reference -->
+      <script src="https://www.gstatic.com/firebasejs/3.7.1/firebase.js"></script>
+  
+      <!-- javascript file -->
+      <script src="assets/javascript/logic.js"></script>
+  
+  </html>
+  
+  
